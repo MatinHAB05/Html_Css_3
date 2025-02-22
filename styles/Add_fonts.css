@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Archivo_Black" ;
+    src: local("Archivo_Black")  , local("archivo_black") , local("Archivo-Black") , local("ArchivoBlack")
+    url("../fonts/Archivo/Archivo_Black.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Roboto_Regular";
+    src: local("Roboto_Regular") , local("RobotoRegular") , local("roboto_regular") , local("Roboto-Regular") 
+    url("../fonts/Roboto/Roboto_Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Roboto_Medium";
+    src: local("Roboto_Medium") , local("RobotoMedium") , local("roboto_medium") , local("Roboto-Medium") 
+    url("../fonts/Roboto/Roboto_Medium.ttf") format("truetype");
+}
