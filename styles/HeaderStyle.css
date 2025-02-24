@@ -1,14 +1,31 @@
-.Header-Top-Container{
+.Header-Container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
+/*******************************************************************************************/
+.Header-Top-Container{
+    display: block;    
+    width: 100%;
+    background-color:blueviolet ;
+    padding:0 3rem;
 }
 
 /*******************************************************************************************/
 .Top__navigation-Container{
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .navigation-left-views{
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
 }
 
 .navigation-left-views__items{
@@ -20,58 +37,93 @@
 }
 
 .navigation-left-views__text{
+    font-size: 1.125rem;
+    font-family: "Roboto_Regular"; 
+    color: var(--graytextColor);
+    position: relative;
+    z-index: 0;
 
 }
 
-.__Home--nav{
+.--SelectedTab{
+    color: white;
 
+}
+.--SelectedTab::before{
+    position: absolute;
+    width: 2.5rem;
+    height: 3px;
+    border-radius: 3px;
+    z-index: -1;
+    content: "";
+    transform: rotate(45deg);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    background-color:var(--Orange_theme_color);
 }
 
 /*******************************************************************************************/
-.main-tilte-Container-buttons{
-
+.TopHeadr-Container-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
 }
 
 .__nav-buttons{
-
+    text-align: center;
+    color: white;
+    font-family: "Roboto_Medium";
+    font-size: 1.125rem;
 }
 
 .__nav-buttons:nth-child(2){
-
+    border: 1px solid white;
+    border-radius: var(--text_button_border_radius);
+    padding: 1rem 2.5rem;
 }
 
 
 /*******************************************************************************************/
 .Top__title-Continer{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 
-.Top__title--item {
+.Top__title--items {
 
 }
 
 .__title--item-tilte{
-
+    font-size: 5rem;
+    font-family: "Archivo_Black";
+    color: white;
 }
-
-
-.Top__title--items{
-
-} 
 
 .__title--item-detail{
-
+    font-size: 1.125rem;
+    font-family: "Roboto_Regular";
+    color: white;
 }
-
-
-.Top__title--items{
-
-}  
 
 .__title--item-button{
-
+    background-color: var(--Orange_theme_color);
+    border-radius: var(--text_button_border_radius);
 }
+
+.__title--item-Discover-button{
+    display: block;
+    font-size: 1.125rem;
+    font-family: "Roboto_Medium";
+    color: white;
+    padding: 1rem 4.2rem;
+} 
 
 
 /*******************************************************************************************/
