@@ -53,11 +53,11 @@
 
 }
 
-.navigation-left-views__icon{
-
+.navigation-left-views__icon a{
+    display: block;
 }
 
-.navigation-left-views__text{
+.navigation-left-views__text a{
     font-size: 1.125rem;
     font-family: "Roboto_Regular"; 
     color: var(--graytextColor);
@@ -66,11 +66,11 @@
 
 }
 
-.--SelectedTab{
+.--SelectedTab a{
     color: white;
 
 }
-.--SelectedTab::before{
+.--SelectedTab a::before{
     position: absolute;
     width: 2.5rem;
     height: 3px;
