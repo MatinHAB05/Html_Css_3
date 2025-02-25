@@ -1,39 +1,87 @@
 .Footer-Container{
-
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
 }
 
 /*******************************************************************************************/
+._Container-EmailSection{
+    width: 100%;
+    padding: 0 2rem;
+}
 .Footer-Container__Top-Footer-MainEmailBoxContainer{
-
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    background-color: var(--Pink_theme_color);
+    border-radius: var(--box_border_radius);
 }
 
 .Footer-Conainer___EmailBoxContainer{
-
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .__tilte-Top-Footer{
-
+    width: 100%;
+    text-align: start;
 }
 .__tilte-Top-Footer h2{
-
+    font-size: 2.5rem;
+    font-family: "Archivo_Black";
 }
 .__text-Top-Footer{
+    width: 100%;
 
 }
 .__text-Top-Footer p{
-
+    font-size: 1rem;
+    font-family: "Roboto_Medium";
+    max-width: 30rem;
+    line-height: 1.75;
 }
 .__emailbox-Top-Footer{
-
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+    border-radius: var(--box_border_radius);
 }
 .LabelInputs{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(141,141,141,0.6);
 }
 #emailBox{
+    font-family: "Roboto_Regular";
+    font-size: 0.8rem;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+#emailBox::placeholder{
+    font-family: "Roboto_Regular";
+    font-size: 0.8rem;
+    color: rgba(141,141,141,0.6);
 
 }
 .SendEmailButton{
-
+    border: none;
+    outline: none;
+    background-color: var(--Orange_theme_color);
+    padding: 0.8rem;
+    border-radius: var(--box_border_radius);
+    box-shadow: 0px 2px 8px var(--Orange_theme_color);
 }
 
 /*******************************************************************************************/
