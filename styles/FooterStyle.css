@@ -3,6 +3,8 @@
     flex-direction: column;
     width: 100%;
     gap: 3rem;
+    margin-top: 8rem;
+
 }
 
 /*******************************************************************************************/
@@ -19,6 +21,7 @@
     padding: 0 5rem;
     background-color: var(--Pink_theme_color);
     border-radius: var(--box_border_radius);
+    box-shadow: 5px 10px 30px rgba(59, 55, 53, 0.05);
 }
 
 .Footer-Conainer___EmailBoxContainer{
@@ -64,14 +67,14 @@
 }
 #emailBox{
     font-family: "Roboto_Regular";
-    font-size: 0.8rem;
+    font-size: 1rem;
     border: none;
     outline: none;
     width: 100%;
 }
 #emailBox::placeholder{
     font-family: "Roboto_Regular";
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: rgba(141,141,141,0.6);
 
 }
@@ -94,12 +97,23 @@
 .Footer-Container__Bottm-Footer-More-Acc-Links-Container{
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
     width: 100%;
     padding: 4rem 10rem 1rem;
     gap: 1rem;
     border-radius: calc(10*var(--box_border_radius)) calc(10*var(--box_border_radius)) 0 0;
     background-color: var(--Pink_theme_color);
+}
+.Footer-Container__Bottm-Footer-More-Acc-Links-Container__Goto_FirstOFweb-Button{
+    position: absolute;
+    background-color: white;
+    border-radius: var(--box_border_radius);
+    padding: 1rem;
+    top: -1.5rem;
+    right: 9rem;
+    box-shadow: 5px 10px 30px rgba(59, 55, 53, 0.05);
+
 }
 
 /*******************************************************************************************/
