@@ -45,6 +45,7 @@
     flex-grow: 1;
     background-color: white;
     border-radius: var(--box_border_radius);
+    position: relative;
 }
 
 .items-Picture{
@@ -109,9 +110,23 @@
     border-radius: var(--box_border_radius);
     z-index: 3;
 }
-/* .items-Picture__like-Icon{
-
-} */
+.items-Picture__like-Icon{
+    padding: 0.5rem;
+    position: absolute;
+    background-color: white;
+    right: 1rem;
+    top: 1rem;
+    z-index: 5;
+    border-radius: 0.875rem;
+}
+.items-Picture__like-Icon path{
+    fill: transparent;
+    stroke: var(--Orange_theme_color);
+    stroke-width: 1.1px;
+}
+path.I_Like_That{
+    fill: var(--Orange_theme_color)
+}
 
 .items-price-dealtails{
     font-size: 1rem;
