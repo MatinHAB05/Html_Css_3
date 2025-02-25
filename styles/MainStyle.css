@@ -6,6 +6,19 @@
     gap: 2rem;
     padding: 0 5rem;
     margin-top: 8rem;
+    position: relative;
+}
+
+
+
+.Main-StarShapeTop{
+    right: -35%;
+    top: -24%;
+}
+
+.Main-StarShapBottom{
+    left: -24%;
+    bottom: 14%;
 }
 
 /*********************************************************************************************/
