@@ -82,6 +82,7 @@
     padding: 0.8rem;
     border-radius: var(--box_border_radius);
     box-shadow: 0px 2px 8px var(--Orange_theme_color);
+    cursor: pointer;
 }
 
 /*******************************************************************************************/
@@ -91,29 +92,68 @@
 
 /*******************************************************************************************/
 .Footer-Container__Bottm-Footer-More-Acc-Links-Container{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 4rem 10rem 1rem;
+    gap: 1rem;
+    border-radius: calc(10*var(--box_border_radius)) calc(10*var(--box_border_radius)) 0 0;
+    background-color: var(--Pink_theme_color);
 }
 
 /*******************************************************************************************/
+.BottomFooter__MoreAccLinkes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .__MoreInfo-Container{
-
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
 }
 
 /*******************************************************************************************/
+.Text_Container_bottmFooter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .BottomFotter__tiltle-text{
-
+    font-size: 1.125rem;
+    font-family: "Archivo_Black";
+    width: 100%;
 }
 .BottomFotter__tiltle-text *{
 
 }
 .BottomFotter__text-text{
-
+    font-size: 1rem;
+    font-family: "Roboto_Regular";
+    width: 100%;
 }
 .BottomFotter__text-text p{
-
+    max-width: 24rem;
+    text-align: justify;
+    line-height: 1.75;
 }
 .BottomFooter__WaysToDownloadApp-Container{
-
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+.Download__App-Conitainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+    gap: 1rem;
 }
 .Download__App{
 
@@ -121,15 +161,21 @@
 
 /*******************************************************************************************/
 .__MoreAccLinks-items{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
 }
 
 /*******************************************************************************************/
 .__LinksFooter{
-    
+    font-size: 1rem;
+    font-family: "Roboto_Regular";
+    width: 100%;
 }
 
 /*******************************************************************************************/
 .BottomFooter__CopyRight{
-
+    font-size: 1rem;
+    font-family: "Roboto_Regular";
 }
