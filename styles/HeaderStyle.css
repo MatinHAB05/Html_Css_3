@@ -205,8 +205,10 @@
 }
 .Header-Bottom-Container__items-title{
     width: 100%;
-    text-align: center
+    text-align: center;
+    word-wrap: break-word;
 }
+
 .Header-Bottom-Container__items-title h5{
     font-family: "Archivo_Black";
     font-size: 1.125rem;
