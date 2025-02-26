@@ -32,8 +32,6 @@
 
 /*********************************************************************************************/
 .Main-Container__text-title{
-    font-family: "Archivo_Black";
-    font-size: 2.5rem ;
     max-width: 28rem;
     text-align: center;
 }
@@ -152,18 +150,15 @@ path.I_Like_That{
     z-index: 1;
 }
 
-.items-title{
+.items-title-Main{
     width: 100%;
     text-align: center;
-    font-family: "Archivo_Black";
-    font-size: 1.125rem;
+
 }
 
 .items-text{
     width: 100%;
     text-align: center;
-    font-family: "Roboto_Regular";
-    font-size: 1rem;
     line-height: 1.75;
 }
 

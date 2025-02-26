@@ -51,8 +51,7 @@
     text-align: start;
 }
 .__tilte-Top-Footer h2{
-    font-size: 2.5rem;
-    font-family: "Archivo_Black";
+
 }
 .__text-Top-Footer{
     width: 100%;
@@ -155,8 +154,6 @@
     gap: 1rem;
 }
 .BottomFotter__tiltle-text{
-    font-size: 1.125rem;
-    font-family: "Archivo_Black";
     width: 100%;
 }
 .BottomFotter__tiltle-text *{
@@ -199,13 +196,11 @@
 
 /*******************************************************************************************/
 .__LinksFooter{
-    font-size: 1rem;
-    font-family: "Roboto_Regular";
     width: 100%;
 }
 
 /*******************************************************************************************/
 .BottomFooter__CopyRight{
-    font-size: 1rem;
-    font-family: "Roboto_Regular";
+
+    
 }
