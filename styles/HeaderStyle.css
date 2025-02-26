@@ -28,7 +28,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    border-radius: 0 0 12.5rem 12.5rem;
+    border-radius: inherit;
 }
 
 
@@ -53,8 +53,14 @@
 
 }
 
-.navigation-left-views__icon a{
+.navigation-left-views__Webicon a{
     display: block;
+}
+.navigation-views__Menuicon{
+    display: none;
+    padding: 1rem 0.75rem;
+    background-color: white;
+    border-radius: var(--box_border_radius);
 }
 
 .navigation-left-views__text a{
@@ -174,6 +180,7 @@
     padding: 0 3rem;
     gap: 1rem;
     z-index: 1;
+    flex-wrap: wrap;
 }
 
 /*******************************************************************************************/
@@ -186,6 +193,7 @@
     border-radius: 1.25rem;
     flex-grow: 1;
     flex-basis: 0;
+    min-width: 15rem;
 }
 
 .Header-Bottom-Container__items-icon{
@@ -197,8 +205,10 @@
 }
 .Header-Bottom-Container__items-title{
     width: 100%;
-    text-align: center
+    text-align: center;
+    word-wrap: break-word;
 }
+
 .Header-Bottom-Container__items-title h5{
     font-family: "Archivo_Black";
     font-size: 1.125rem;
