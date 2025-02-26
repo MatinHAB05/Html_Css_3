@@ -149,9 +149,14 @@
 
 
 /* Default: Extra-small devices such as small phones (less than 640px) */
-@media only screen and (max-width: 350px) 
+@media only screen and (max-width: 240px) 
 {
 
     /*Bottom Header*/
-
+    .__title--item-tilte{
+        font-size: 2rem
+    }
+    .__title--item-detail{
+        font-size: 0.8rem;
+    }
 }
