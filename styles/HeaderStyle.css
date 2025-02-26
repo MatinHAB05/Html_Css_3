@@ -53,8 +53,14 @@
 
 }
 
-.navigation-left-views__icon a{
+.navigation-left-views__Webicon a{
     display: block;
+}
+.navigation-views__Menuicon{
+    display: none;
+    padding: 1rem 0.75rem;
+    background-color: white;
+    border-radius: var(--box_border_radius);
 }
 
 .navigation-left-views__text a{

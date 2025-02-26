@@ -1,14 +1,10 @@
-@media only screen and (min-width: 1280px) 
-{
-    
-}
-
-
-
 /* Largest devices such as desktops (1280px and up) */
 @media only screen and (max-width: 1280px) 
 {
-    
+    /*Top Header*/
+
+    /*Bottom Header*/
+
 }
 
 
@@ -16,6 +12,15 @@
 /* Large devices such as laptops (1024px and up) */
 @media only screen and (max-width: 1024px) 
 {
+    /*Top Header*/
+    .TopHeadr-Container-buttons{
+        display: none;
+    }
+    .navigation-left-views a{
+        font-size: 1.1rem;
+    }
+
+    /*Bottom Header*/
 
 }
 
@@ -23,6 +28,49 @@
 /* Medium devices such as tablets (768px and up) */
 @media only screen and (max-width: 768px) 
 {
+    /*Top Header*/
+    .navigation-left-views__text{
+        display: none;
+    }
+    .__title--item-tilte{
+        font-size: 4.8rem
+    }
+    .__title--item-detail{
+        font-size: 1rem;
+    }
+    .__title--item-Discover-button{
+        font-size: 1rem;
+        padding: 1rem 3rem;
+    } 
+    .navigation-views__Menuicon{
+        display: block;
+    }
+    .Header-Top-Container{
+        padding: 0 2rem;
+    }
+    .Header-Top-Container{
+        height: max-content;
+        background-position: center;
+        padding-top: 0rem;
+        padding-bottom: 2rem;
+        gap: 5rem;
+        border-radius: 0 0 6rem 6rem;
+    }
+    .Header-Top-Container::before{
+        content: "";
+        z-index: -1;
+        background-color: rgba(59, 55, 53, 0.5);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-radius: 0 0 6rem 6rem;
+    }
+    
+    
+
+    /*Bottom Header*/
 
 }
 
@@ -31,10 +79,62 @@
 /* Small devices such as large phones (640px and up) */
 @media only screen and (max-width: 640px) 
 {
+    /*Top Header*/
+
+
+
+
+    /*Bottom Header*/
 
 }
 
 
+@media only screen and (max-width: 500px) 
+{
+    /*Top Header*/
+    .Header-Top-Container{
+        padding: 0 0.5rem 2rem;
+    }
+
+
+
+    /*Bottom Header*/
+
+}
+@media only screen and (max-width: 400px) 
+{
+    /*Top Header*/
+    .Header-Top-Container{
+        border-radius: 0 0 0 0;
+    }
+
+    .__title--item-tilte{
+        font-size: 3rem
+    }
+    .__title--item-detail{
+        font-size: 0.8rem;
+    }
+    .__title--item-Discover-button{
+        font-size: 0.8rem;
+        padding: 1rem 2rem;
+
+    } 
+    .Header-Top-Container::before{
+        content: "";
+        z-index: -1;
+        background-color: rgba(59, 55, 53, 0.5);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-radius: 0 0 0 0;
+    }
+    
+
+    /*Bottom Header*/
+
+}
 
 
 /* Default: Extra-small devices such as small phones (less than 640px) */
