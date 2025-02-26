@@ -42,6 +42,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -67,6 +68,8 @@
     height: 10rem;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+
 }
 
 /*********************************************************************************************/
@@ -140,19 +143,19 @@ path.I_Like_That{
 }
 
 .items-price-dealtails{
-    font-size: 1rem;
-    font-family: "Roboto_Medium";
     color: var(--Orange_theme_color);
     background-color: white;
     border-radius: 0.9rem;
     padding: 1rem 2.5rem;
     margin-top: -2.5rem;
     z-index: 1;
+    word-wrap: break-word;
 }
 
 .items-title-Main{
     width: 100%;
     text-align: center;
+    text-overflow: clip;
 
 }
 
@@ -171,8 +174,7 @@ path.I_Like_That{
 }
 
 .items-ReadMore-Button a{
-    font: size 1.25rem; ;
-    font-family: "Roboto_Medium";
+
     background-color: rgba(141, 141, 141,0.1);
     color: var(--grayReadMore);
     border-radius: var(--text_button_border_radius);
@@ -188,11 +190,10 @@ path.I_Like_That{
     align-items: center;
 }
 .Main-Cotainer__ViewAll-Button a{
-    font: size 1.25rem; ;
-    font-family: "Roboto_Medium";
     border: 1px solid var(--Orange_theme_color);
     color: var(--Orange_theme_color);
     border-radius: var(--text_button_border_radius);
     padding: 1rem 4.5rem;
+    text-align: center;
 
 }
