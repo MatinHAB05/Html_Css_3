@@ -132,7 +132,7 @@
     align-items: center;
     width: 100%;
     padding: 4rem 10rem 1rem;
-    gap: 1rem;
+    gap: 2rem;
     border-radius: calc(10*var(--box_border_radius)) calc(10*var(--box_border_radius)) 0 0;
     background-color: var(--Pink_theme_color);
 }
@@ -153,15 +153,21 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    column-gap: 2rem;
+
 }
 
 .__MoreInfo-Container{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    height: 100%;
-}
 
+}
+.__MoreInfo-Container h4{
+    display: inline;
+}
 /*******************************************************************************************/
 .Text_Container_bottmFooter{
     width: 100%;
@@ -197,6 +203,7 @@
     width: 100%;
     justify-content: start;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 .Download__App{
 
@@ -208,6 +215,7 @@
     flex-direction: column;
     justify-content: start;
     gap: 1rem;
+    
 }
 
 /*******************************************************************************************/
