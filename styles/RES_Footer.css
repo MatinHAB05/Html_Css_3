@@ -37,6 +37,8 @@
     }
     .Footer-StarShapLeft{
         transform: scale(-1);
+        background-position: bottom;
+
     }
 
    
