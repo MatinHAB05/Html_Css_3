@@ -1,7 +1,9 @@
 /* Largest devices such as desktops (1280px and up) */
 @media only screen and (max-width: 1280px) 
 {
-    
+    .Footer-Container__Top-Footer-MainEmailBoxContainer{
+        padding: 0 2rem;
+    }
 }
 
 
@@ -9,7 +11,19 @@
 /* Large devices such as laptops (1024px and up) */
 @media only screen and (max-width: 1024px) 
 {
-
+    .__text-Top-Footer p{
+        text-align: center;
+    }
+    .Footer-Container__Top-Footer-MainEmailBoxContainer{
+        flex-direction: column-reverse;
+        padding: 0 1rem;
+    }
+    .__tilte-Top-Footer{
+        text-align: center;
+    }
+    .Footer-StarShapLeft{
+        transform: scale(-1);
+    }
 }
 
 
@@ -17,6 +31,9 @@
 @media only screen and (max-width: 768px) 
 {
 
+    .Footer-StarShapLeft{
+        transform: none;
+    }
 }
 
 
@@ -24,10 +41,39 @@
 /* Small devices such as large phones (640px and up) */
 @media only screen and (max-width: 640px) 
 {
+    .Footer-Conainer__CampingImage{
+        z-index: 2;
+        width: 100%;
+    }
 
 }
 
 
+@media only screen and (max-width: 340px) 
+{
+    .__emailbox-Top-Footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 300px) 
+{
+
+    .LabelInputs{
+        display: none;
+    }
+
+    #emailBox{
+        font-size: 0.8rem;
+    }
+    #emailBox::placeholder{
+        font-size: 0.8rem;
+    }
+}
 
 
 /* Default: Extra-small devices such as small phones (less than 640px) */

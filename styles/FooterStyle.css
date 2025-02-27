@@ -12,31 +12,41 @@
 ._Container-EmailSection{
     width: 100%;
     padding: 0 2rem;
-    position: relative;
     z-index: 0;
 }
 .Footer-Container__Top-Footer-MainEmailBoxContainer{
     display: flex;
     flex-direction: row;
     width: 100%;
+    gap: 2rem;
+    position: relative;
     align-items: center;
     justify-content: space-between;
     padding: 0 5rem;
     background-color: var(--Pink_theme_color);
+    
+     /* background-color: black; */
     border-radius: var(--box_border_radius);
     box-shadow: 5px 10px 30px rgba(59, 55, 53, 0.05);
     z-index: 1;
 }
 .Footer-StarShapLeft>svg{
-    height: 100%;   
+    height: 100%;
 
 }
 .Footer-StarShapLeft{
-    width: auto;
-    display: block;
-    z-index: 2;
+    z-index: 2; 
     top: 0;
     bottom: 0;
+    border-radius: var(--box_border_radius);
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background-image: url("../images/Iconic/SvgFormat/shape3.svg");
+    background-repeat: no-repeat;
+    background-size: auto 100% ;
+    background-position: bottom;
+    
 }
 
 .Footer-Conainer___EmailBoxContainer{
@@ -73,6 +83,12 @@
     padding: 0.5rem 1rem;
     gap: 1rem;
     border-radius: var(--box_border_radius);
+}
+.Footer_sendEmailSection{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
 }
 .LabelInputs{
     display: flex;
