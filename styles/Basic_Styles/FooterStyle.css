@@ -42,7 +42,7 @@
     height: 100%;
     left: 0;
     width: 100%;
-    background-image: url("../images/Iconic/SvgFormat/shape3.svg");
+    background-image: url("../../images/Iconic/SvgFormat/shape3.svg");
     background-repeat: no-repeat;
     background-size: auto 100% ;
     background-position: left;
@@ -86,7 +86,7 @@
 }
 .Footer_sendEmailSection{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     width: 100%;
     gap: 1rem;
 }
@@ -177,9 +177,12 @@
 }
 .BottomFotter__tiltle-text{
     width: 100%;
+    position: relative;
+    order: -1;
 }
 .BottomFotter__tiltle-text *{
-
+    display: inline;
+    position: relative;
 }
 .BottomFotter__text-text{
     font-size: 1rem;
@@ -221,7 +224,12 @@
 /*******************************************************************************************/
 .__LinksFooter{
     width: 100%;
+    
 }
+.__LinksFooter a{
+
+}
+
 
 /*******************************************************************************************/
 .BottomFooter__CopyRight{

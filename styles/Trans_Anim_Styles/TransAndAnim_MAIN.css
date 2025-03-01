@@ -1,0 +1,45 @@
+@keyframes scaling_Like_Icon_Anim {
+    0% {
+        scale : 1 ;
+    }
+
+    50%{
+        scale: 10;
+    }
+    80%{
+        scale: 10;
+    }
+
+
+    100%{
+        rotate : 1 ;
+
+    }
+}
+
+
+.items-ReadMore-Button a{
+    transition: background-color var(--tranns_BUTTON);
+}
+.items-ReadMore-Button a:hover{
+    background-color: #E1F5FE;
+    /* color: b; */
+}
+
+.Main-Cotainer__ViewAll-Button a{
+    transition: background-color var(--tranns_BUTTON);
+}
+.Main-Cotainer__ViewAll-Button a:hover{
+    background-color: var(--Orange_theme_color);
+    color: white;
+}
+.items-Picture__like-Icon path{
+    transition: fill 800ms cubic-bezier(0.4, 0, 1,-0.09) 200ms;
+}
+.items-Picture__like-Icon:hover svg{
+    animation: scaling_Like_Icon_Anim 1500ms ease-in-out 10ms forwards;
+
+}
+.items-Picture__like-Icon:hover path{
+    fill: var(--Orange_theme_color);
+}

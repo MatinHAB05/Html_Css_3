@@ -1,0 +1,63 @@
+@keyframes bell_Ring {
+    0% {
+        transform: rotate(-3deg);
+    
+    }
+
+    100%{
+        transform: rotate(3deg);
+    }
+}
+
+.SendEmailButton{
+    transition: background-color  200ms ease-in-out 10ms , box-shadow  200ms ease-in-out 10ms ;
+}
+.SendEmailButton:hover{
+    background-color: #1E88E5;
+    box-shadow: 0px 2px 8px #1E88E5;
+}
+#emailBox:focus + label path{
+    fill:var(--Orange_theme_color) ;
+    stroke: var(--Orange_theme_color);
+    stroke-width: 0.5px;
+}
+.Footer-Container__Bottm-Footer-More-Acc-Links-Container__Goto_FirstOFweb-Button:hover path{
+    fill: white;
+}
+.Footer-Container__Bottm-Footer-More-Acc-Links-Container__Goto_FirstOFweb-Button:hover{
+    background-color: var(--Orange_theme_color);
+}
+.Footer-Container__Bottm-Footer-More-Acc-Links-Container__Goto_FirstOFweb-Button{
+   transition: background-color  200ms ease-in-out 10ms;
+}
+.__LinksFooter{
+    transition: transform 100ms linear 100ms;
+}
+.__LinksFooter:hover{
+    transform: translateX(20px);
+}
+.__LinksFooter:hover ~ .BottomFotter__tiltle-text h4::before{
+    background-color: #64B5F6;
+    width: 70px;
+    box-shadow: 0 3px 2px rgb(0,0,255);
+}
+.BottomFotter__tiltle-text h4::before{
+    transition: width 300ms linear 10ms 
+   , background-color 300ms linear 10ms ;
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+}
+.BottomFooter__CopyRight a:hover{
+    color: blue;
+    text-shadow: 0 0 3px red ;
+}
+.Download__App img:hover{
+    animation: bell_Ring 100ms ease 110ms infinite alternate;
+}

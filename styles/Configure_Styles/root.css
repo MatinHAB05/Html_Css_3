@@ -9,6 +9,9 @@
     --box_border_radius : 1.25rem;
 
     --backBODY_color:#FAF4F2;
+
+    --tranns_BUTTON: 100ms ease-in 10ms ;
+
 }
 
 *{
