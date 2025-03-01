@@ -1,0 +1,41 @@
+@keyframes Loading_Anim {to{background-position: 80% 100%}}
+@keyframes Rotate_360deg {
+    0%{
+        transform: rotate(0deg);
+    }
+    /* 50%{
+        transform: rotate(180deg);
+    } */
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.__nav-buttons{
+    transition: background-color var(--tranns_BUTTON);
+}
+.__nav-buttons:hover{
+    background-color: white;
+    color: black;
+}
+
+.navigation-left-views__text{
+    transition: padding 10ms ease-in-out 10ms ;
+}
+.navigation-left-views__text:hover{
+    color: greenyellow;
+    padding: 0 0 2px 0;
+    background: repeating-linear-gradient(90deg,currentColor 0 8%,#0000 0 10%) 200% 100%/200% 3px no-repeat;
+    animation: Loading_Anim 2s steps(6) infinite;
+}
+.navigation-left-views__Webicon:hover{
+    animation: Rotate_360deg 800ms ease-in-out 10ms 1 normal forwards;
+}
+.__title--item-Discover-button{
+    transition: background-color var(--tranns_BUTTON);
+}
+.__title--item-Discover-button:hover{
+    background-color: white;
+    color: var(--Orange_theme_color);
+}

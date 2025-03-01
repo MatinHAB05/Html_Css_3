@@ -11,7 +11,7 @@
     align-items: center; 
     width: 100%;
     height: 67.5rem;
-    background:url("../images/Header/header-bg.jpg");
+    background:url("../../images/Header/header-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0 0 12.5rem 12.5rem;
@@ -113,11 +113,12 @@
     color: white;
     font-family: "Roboto_Medium";
     font-size: 1.125rem;
+    border-radius: var(--text_button_border_radius);
+    padding: 1rem 1rem;
 }
 
 .__nav-buttons:nth-child(2){
     border: 1px solid white;
-    border-radius: var(--text_button_border_radius);
     padding: 1rem 2.5rem;
 }
 
@@ -157,8 +158,7 @@
 }
 
 .__title--item-button{
-    background-color: var(--Orange_theme_color);
-    border-radius: var(--text_button_border_radius);
+
 }
 
 .__title--item-Discover-button{
@@ -167,6 +167,8 @@
     font-family: "Roboto_Medium";
     color: white;
     padding: 1rem 4.2rem;
+    background-color: var(--Orange_theme_color);
+    border-radius: var(--text_button_border_radius);
 } 
 
 
