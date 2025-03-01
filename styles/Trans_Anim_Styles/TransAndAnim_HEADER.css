@@ -39,3 +39,9 @@
     background-color: white;
     color: var(--Orange_theme_color);
 }
+.Header-Bottom-Container__item-Continer{
+    transition:  box-shadow var(--tranns_BUTTON);
+}
+.Header-Bottom-Container__item-Continer:hover{
+    box-shadow: 0px 1px 20px black;
+}
