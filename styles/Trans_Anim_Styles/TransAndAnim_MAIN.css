@@ -1,6 +1,8 @@
 @keyframes scaling_Like_Icon_Anim {
     0% {
         scale : 1 ;
+        rotate: 0deg;
+
     }
 
     50%{
@@ -12,7 +14,19 @@
 
 
     100%{
-        rotate : 1 ;
+        rotate: 0deg;
+        scale : 1 ;
+
+    }
+}
+@keyframes rotating_Like_Icon_Anim {
+    0% {
+        rotate: -3deg;
+
+    }
+
+    100%{
+       rotate: +3deg;
 
     }
 }
@@ -34,10 +48,10 @@
     color: white;
 }
 .items-Picture__like-Icon path{
-    transition: fill 800ms cubic-bezier(0.4, 0, 1,-0.09) 200ms;
+    transition: fill 300ms ease-in 800ms;
 }
 .items-Picture__like-Icon:hover svg{
-    animation: scaling_Like_Icon_Anim 1500ms ease-in-out 10ms forwards;
+    animation: scaling_Like_Icon_Anim 1500ms ease-in-out 10ms forwards , rotating_Like_Icon_Anim 100ms ease-in-out 800ms 6 alternate;
 
 }
 .items-Picture__like-Icon:hover path{

@@ -31,7 +31,7 @@
    transition: background-color  200ms ease-in-out 10ms;
 }
 .__LinksFooter{
-    transition: transform 100ms linear 100ms;
+    transition: transform 100ms linear 400ms;
 }
 .__LinksFooter:hover{
     transform: translateX(20px);
@@ -39,14 +39,14 @@
 .__LinksFooter:hover ~ .BottomFotter__tiltle-text h4::before{
     background-color: #64B5F6;
     width: 70px;
-    box-shadow: 0 3px 2px rgb(0,0,255);
 }
 .BottomFotter__tiltle-text h4::before{
-    transition: width 300ms linear 10ms 
-   , background-color 300ms linear 10ms ;
+    transition: width 300ms linear 400ms 
+    , background-color 300ms linear 400ms ;
     content: "";
     position: absolute;
     bottom: -4px;
+    box-shadow: 0 3px 2px rgb(0,0,255);
     right: 0;
     left: 0;
     margin: auto;
