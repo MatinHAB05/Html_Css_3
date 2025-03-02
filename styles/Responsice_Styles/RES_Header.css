@@ -29,6 +29,11 @@
 @media only screen and (max-width: 768px) 
 {
     /*Top Header*/
+    .Header_SidePanel{
+        /* display: flex; */
+        /* flex-direction: column;
+        gap: ; */
+    }
     .navigation-left-views__text{
         display: none;
     }
