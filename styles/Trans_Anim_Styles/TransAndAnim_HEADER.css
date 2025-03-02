@@ -45,3 +45,36 @@
 .Header-Bottom-Container__item-Continer:hover{
     box-shadow: 0px 1px 20px black;
 }
+.SideBar__CloseButton{
+    transition: all 100ms linear 100ms;
+}
+
+.SideBar__CloseButton:hover{
+    opacity: 1;
+    filter: none;
+    box-shadow: none;
+}
+
+.SideBar__CloseButton:hover~.__nav-sideBar-Container__LINKS{
+    filter: blur(2px);
+}
+.__nav-sideBar-Container__LINKS{
+    transition: filter 300ms linear 100ms;
+
+}
+.SidePanel__navigation-left-views__text:hover::before{
+    content: "# ";
+    color: transparent;
+    position: relative;
+    text-shadow: 0px 0px 10px greenyellow;
+    animation: Light_Blinking 600ms 500ms infinite alternate linear;
+}
+
+@keyframes Light_Blinking {
+    0%{
+
+    }
+    100%{
+        color: greenyellow;
+    }   
+}

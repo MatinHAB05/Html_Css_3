@@ -30,6 +30,7 @@ a{
 body{
     background-color: var(--backBODY_color);
      /* background-color: black; */
+    
 }
 .Shape_Container{
     position: absolute;
