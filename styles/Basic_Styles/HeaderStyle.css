@@ -61,6 +61,7 @@
     padding: 1rem 0.75rem;
     background-color: white;
     border-radius: var(--box_border_radius);
+    cursor: pointer;
 }
 
 .navigation-left-views__text a{
@@ -95,9 +96,9 @@
 /*******************************************************************************************/
 
 .Header_SidePanel{
-    /* display: none; */
+    display: none;
     position: fixed;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     left: 0;
     top: 0;
@@ -158,9 +159,8 @@
     padding-top: var(--dist);
     overflow-y: auto;
 }
-header , main , footer{
-    filter: blur(8.6px);
-    pointer-events: none;  
+.ALL-CONTENS-ITEMS{
+    transition: filter 500ms ease 10ms ;
 }
 .SidePanel__navigation-left-views__items{
     padding: 0 1rem;
