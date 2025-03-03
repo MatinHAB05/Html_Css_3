@@ -160,6 +160,7 @@
 }
 header , main , footer{
     filter: blur(8.6px);
+    pointer-events: none;  
 }
 .SidePanel__navigation-left-views__items{
     padding: 0 1rem;
