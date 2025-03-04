@@ -13,6 +13,9 @@
     --tranns_BUTTON: 100ms ease-in 10ms ;
 
 }
+html{
+    scroll-behavior:smooth ;
+}
 
 *{
         
@@ -30,7 +33,6 @@ a{
 body{
     background-color: var(--backBODY_color);
      /* background-color: black; */
-    
 }
 .Shape_Container{
     position: absolute;
@@ -52,4 +54,13 @@ body{
 .REB-medium__text-1{
     font-family: "Roboto_Medium";
     font-size: 1rem;
+}
+
+
+.selectable{
+    user-select: auto;
+}
+
+a,svg,img,form{
+    user-select: none;
 }
