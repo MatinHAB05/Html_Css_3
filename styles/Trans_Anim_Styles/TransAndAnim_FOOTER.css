@@ -1,20 +1,47 @@
-@keyframes bell_Ring {
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@-webkit-keyframes bell_Ring {
     0% {
-        transform: rotate(-3deg);
+        -webkit-transform: rotate(-3deg);
+                transform: rotate(-3deg);
     
     }
 
     100%{
-        transform: rotate(3deg);
+        -webkit-transform: rotate(3deg);
+                transform: rotate(3deg);
+    }
+}
+
+@keyframes bell_Ring {
+    0% {
+        -webkit-transform: rotate(-3deg);
+                transform: rotate(-3deg);
+    
+    }
+
+    100%{
+        -webkit-transform: rotate(3deg);
+                transform: rotate(3deg);
     }
 }
 
 .SendEmailButton{
+    -webkit-transition: background-color  200ms ease-in-out 10ms , -webkit-box-shadow  200ms ease-in-out 10ms;
+    transition: background-color  200ms ease-in-out 10ms , -webkit-box-shadow  200ms ease-in-out 10ms;
+    -o-transition: background-color  200ms ease-in-out 10ms , box-shadow  200ms ease-in-out 10ms ;
     transition: background-color  200ms ease-in-out 10ms , box-shadow  200ms ease-in-out 10ms ;
+    transition: background-color  200ms ease-in-out 10ms , box-shadow  200ms ease-in-out 10ms , -webkit-box-shadow  200ms ease-in-out 10ms;
 }
 .SendEmailButton:hover{
     background-color: #1E88E5;
-    box-shadow: 0px 2px 8px #1E88E5;
+    -webkit-box-shadow: 0px 2px 8px #1E88E5;
+            box-shadow: 0px 2px 8px #1E88E5;
 }
 #emailBox:focus + label path{
     fill:var(--Orange_theme_color) ;
@@ -28,25 +55,38 @@
     background-color: var(--Orange_theme_color);
 }
 .Footer-Container__Bottm-Footer-More-Acc-Links-Container__Goto_FirstOFweb-Button{
+   -webkit-transition: background-color  200ms ease-in-out 10ms;
+   -o-transition: background-color  200ms ease-in-out 10ms;
    transition: background-color  200ms ease-in-out 10ms;
 }
 .__LinksFooter{
+    -webkit-transition: -webkit-transform 100ms linear 400ms;
+    transition: -webkit-transform 100ms linear 400ms;
+    -o-transition: transform 100ms linear 400ms;
     transition: transform 100ms linear 400ms;
+    transition: transform 100ms linear 400ms, -webkit-transform 100ms linear 400ms;
 }
 .__LinksFooter:hover{
-    transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+            transform: translateX(20px);
 }
 .__LinksFooter:hover ~ .BottomFotter__tiltle-text h4::before{
     background-color: #64B5F6;
     width: 70px;
 }
 .BottomFotter__tiltle-text h4::before{
+    -webkit-transition: width 300ms linear 400ms 
+    , background-color 300ms linear 400ms ;
+    -o-transition: width 300ms linear 400ms 
+    , background-color 300ms linear 400ms ;
     transition: width 300ms linear 400ms 
     , background-color 300ms linear 400ms ;
     content: "";
     position: absolute;
     bottom: -4px;
-    box-shadow: 0 3px 2px rgb(0,0,255);
+    -webkit-box-shadow: 0 3px 2px rgb(0,0,255);
+            box-shadow: 0 3px 2px rgb(0,0,255);
     right: 0;
     left: 0;
     margin: auto;
@@ -59,5 +99,6 @@
     text-shadow: 0 0 3px red ;
 }
 .Download__App img:hover{
-    animation: bell_Ring 100ms ease 110ms infinite alternate;
+    -webkit-animation: bell_Ring 100ms ease 110ms infinite alternate;
+            animation: bell_Ring 100ms ease 110ms infinite alternate;
 }

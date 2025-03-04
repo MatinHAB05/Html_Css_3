@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root{
     --graytextColor : #D2D2D2;
     --grayReadMore : #8D8D8D;
@@ -22,7 +29,8 @@ html{
 }
 
 *,*::after,*::before{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 a{
@@ -58,9 +66,15 @@ body{
 
 
 .selectable{
-    user-select: auto;
+    -webkit-user-select: auto;
+       -moz-user-select: auto;
+        -ms-user-select: auto;
+            user-select: auto;
 }
 
 a,svg,img,form{
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }

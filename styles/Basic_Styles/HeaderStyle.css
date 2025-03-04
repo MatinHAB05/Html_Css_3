@@ -1,14 +1,33 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .Header-Container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
 }
 
 /*******************************************************************************************/
 .Header-Top-Container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center; 
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; 
     width: 100%;
     height: 67.5rem;
     background:url("../../images/Header/header-bg.jpg");
@@ -35,17 +54,33 @@
 /*******************************************************************************************/
 .Top__navigation-Container{
     margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .navigation-left-views{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 1rem;
 }
 
@@ -84,7 +119,9 @@
     border-radius: 3px;
     z-index: -1;
     content: "";
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     right: 0;
     left: 0;
     top: 0;
@@ -99,7 +136,10 @@
     display: none;
     position: fixed;
     /* display: flex; */
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     left: 0;
     top: 0;
     bottom: 0 ;
@@ -117,13 +157,21 @@
     --ipt-baseAlt-stripes-opacity: 0.08;    
     height: 4px;
     width: 100%;
+    background: -o-repeating-linear-gradient(45deg, rgba(var(--ipt-on-baseAlt-stripes-rgb), var(--ipt-baseAlt-stripes-opacity)), rgba(var(--ipt-on-baseAlt-stripes-rgb), var(--ipt-baseAlt-stripes-opacity)) 2px, transparent 2px, transparent 7px), transparent;
     background: repeating-linear-gradient(45deg, rgba(var(--ipt-on-baseAlt-stripes-rgb), var(--ipt-baseAlt-stripes-opacity)), rgba(var(--ipt-on-baseAlt-stripes-rgb), var(--ipt-baseAlt-stripes-opacity)) 2px, transparent 2px, transparent 7px), transparent;
 }
 .__nav-sideBar-Container{
     background-color: rgb(231, 111, 81);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 2rem;
     height: 100%;
 }
@@ -135,17 +183,28 @@
     text-align: center;
     /* height: 60px; */
     padding: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    filter: blur(1px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
     font-family: "Minecraft";
     font-size: 2rem;
     opacity: 0.3;   
     color: white;
     text-shadow: 0px 3px 1px black;
-    box-shadow: inset 0 0 8px black;
+    -webkit-box-shadow: inset 0 0 8px black;
+            box-shadow: inset 0 0 8px black;
 
 }
 
@@ -153,14 +212,23 @@
 .__nav-sideBar-Container__LINKS{
     height: 100%;
     --dist : 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: var(--dist);
     padding-top: var(--dist);
     overflow-y: auto;
 }
 .ALL-CONTENS-ITEMS{
+    -webkit-transition: -webkit-filter 500ms ease 10ms;
+    transition: -webkit-filter 500ms ease 10ms;
+    -o-transition: filter 500ms ease 10ms ;
     transition: filter 500ms ease 10ms ;
+    transition: filter 500ms ease 10ms, -webkit-filter 500ms ease 10ms;
 }
 .SidePanel__navigation-left-views__items{
     padding: 0 1rem;
@@ -182,7 +250,8 @@
 .--SidePanel__SelectedTab a::before{
     content: "";
     position: absolute;
-    box-shadow: 0 3px 2px rgb(0,0,255);
+    -webkit-box-shadow: 0 3px 2px rgb(0,0,255);
+            box-shadow: 0 3px 2px rgb(0,0,255);
     bottom: -4px;
     right: 0;
     left: 0;
@@ -202,11 +271,18 @@
 .SidePanel__navigation-left-views__iconHeader{
     width: 100%;
     background-color: var(--Orange_theme_color);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 1rem 0;
-    box-shadow:inset 0px 0px 80px black;
+    -webkit-box-shadow:inset 0px 0px 80px black;
+            box-shadow:inset 0px 0px 80px black;
 }
 .SidePanel__navigation-left-views__iconHeader svg{
     height: 100%;
@@ -217,15 +293,31 @@
 .Container_Top__title-Continer{
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .TopHeadr-Container-buttons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 1rem;
 }
 
@@ -246,9 +338,16 @@
 
 /*******************************************************************************************/
 .Top__title-Continer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 3rem;
 }
 
@@ -296,35 +395,58 @@
 /*******************************************************************************************/
 .Header-Bottom-Container{
     margin-top: -4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 100%;
     background-color: transparent;
     padding: 0 3rem;
     gap: 1rem;
     z-index: 1;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 /*******************************************************************************************/
 .Header-Bottom-Container__item-Continer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 1rem 0.5rem;
     gap: 1rem;
     background-color: white;
     border-radius: 1.25rem;
-    flex-grow: 1;
-    flex-basis: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
     min-width: 15rem;
 }
 
 .Header-Bottom-Container__items-icon{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .Header-Bottom-Container__items-title{
     width: 100%;

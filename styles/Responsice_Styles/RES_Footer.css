@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Largest devices such as desktops (1280px and up) */
 @media only screen and (max-width: 1280px) 
 {
@@ -5,13 +12,19 @@
         padding: 0 2rem;
     }
     .__MoreInfo-Container{
-        flex-basis: 100%;
-        justify-content: center;
-        align-items: center;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .BottomFotter__text-text p{
         word-wrap: break-word;
-        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
     }
     .Footer-Container__Bottm-Footer-More-Acc-Links-Container{
         padding: 4rem 2rem;
@@ -29,14 +42,19 @@
         text-align: center;
     }
     .Footer-Container__Top-Footer-MainEmailBoxContainer{
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
         padding: 1rem 1rem;
     }
     .__tilte-Top-Footer{
         text-align: center;
     }
     .Footer-StarShapLeft{
-        transform: scale(-1);
+        -webkit-transform: scale(-1);
+            -ms-transform: scale(-1);
+                transform: scale(-1);
         background-position: bottom;
 
     }
@@ -51,7 +69,9 @@
 {
 
     .Footer-StarShapLeft{
-        transform: none;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
     }
 }
 
@@ -68,7 +88,9 @@
     .Footer-Container__Bottm-Footer-More-Acc-Links-Container__Goto_FirstOFweb-Button{
         top: -1.5rem;
         right: 50%;
-        transform: translateX(+50%);
+        -webkit-transform: translateX(+50%);
+            -ms-transform: translateX(+50%);
+                transform: translateX(+50%);
 
     
     }
@@ -78,8 +100,13 @@
 @media only screen and (max-width: 340px) 
 {
     .__emailbox-Top-Footer{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
 
     }
 
@@ -94,6 +121,18 @@
     }
 
     #emailBox{
+        font-size: 0.8rem;
+    }
+    #emailBox::-webkit-input-placeholder{
+        font-size: 0.8rem;
+    }
+    #emailBox::-moz-placeholder{
+        font-size: 0.8rem;
+    }
+    #emailBox:-ms-input-placeholder{
+        font-size: 0.8rem;
+    }
+    #emailBox::-ms-input-placeholder{
         font-size: 0.8rem;
     }
     #emailBox::placeholder{

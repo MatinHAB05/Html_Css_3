@@ -1,6 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .Footer-Container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     gap: 3rem;
     margin-top: 8rem;
@@ -15,19 +27,29 @@
     z-index: 0;
 }
 .Footer-Container__Top-Footer-MainEmailBoxContainer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 100%;
     gap: 2rem;
     position: relative;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0 5rem;
     background-color: var(--Pink_theme_color);
     
      /* background-color: black; */
     border-radius: var(--box_border_radius);
-    box-shadow: 5px 10px 30px rgba(59, 55, 53, 0.05);
+    -webkit-box-shadow: 5px 10px 30px rgba(59, 55, 53, 0.05);
+            box-shadow: 5px 10px 30px rgba(59, 55, 53, 0.05);
     z-index: 1;
 }
 .Footer-StarShapLeft>svg{
@@ -50,8 +72,13 @@
 }
 
 .Footer-Conainer___EmailBoxContainer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 1rem;
     z-index: 3;
 }
@@ -76,24 +103,44 @@
 .__emailbox-Top-Footer{
     width: 100%;
     background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: stretch;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     padding: 0.5rem 1rem;
     gap: 1rem;
     border-radius: var(--box_border_radius);
 }
 .Footer_sendEmailSection{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
     width: 100%;
     gap: 1rem;
 }
 .LabelInputs{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: rgba(141,141,141,0.6);
 }
 #emailBox{
@@ -102,6 +149,30 @@
     border: none;
     outline: none;
     width: 100%;
+}
+#emailBox::-webkit-input-placeholder{
+    font-family: "Roboto_Regular";
+    font-size: 1rem;
+    color: rgba(141,141,141,0.6);
+
+}
+#emailBox::-moz-placeholder{
+    font-family: "Roboto_Regular";
+    font-size: 1rem;
+    color: rgba(141,141,141,0.6);
+
+}
+#emailBox:-ms-input-placeholder{
+    font-family: "Roboto_Regular";
+    font-size: 1rem;
+    color: rgba(141,141,141,0.6);
+
+}
+#emailBox::-ms-input-placeholder{
+    font-family: "Roboto_Regular";
+    font-size: 1rem;
+    color: rgba(141,141,141,0.6);
+
 }
 #emailBox::placeholder{
     font-family: "Roboto_Regular";
@@ -115,7 +186,8 @@
     background-color: var(--Orange_theme_color);
     padding: 0.8rem;
     border-radius: var(--box_border_radius);
-    box-shadow: 0px 2px 8px var(--Orange_theme_color);
+    -webkit-box-shadow: 0px 2px 8px var(--Orange_theme_color);
+            box-shadow: 0px 2px 8px var(--Orange_theme_color);
     cursor: pointer;
 }
 
@@ -126,10 +198,17 @@
 
 /*******************************************************************************************/
 .Footer-Container__Bottm-Footer-More-Acc-Links-Container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: relative;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     padding: 4rem 10rem 1rem;
     gap: 2rem;
@@ -143,25 +222,41 @@
     padding: 1rem;
     top: -1.5rem;
     right: 9rem;
-    box-shadow: 5px 10px 30px rgba(59, 55, 53, 0.05);
+    -webkit-box-shadow: 5px 10px 30px rgba(59, 55, 53, 0.05);
+            box-shadow: 5px 10px 30px rgba(59, 55, 53, 0.05);
 
 }
 
 /*******************************************************************************************/
 .BottomFooter__MoreAccLinkes{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     row-gap: 2rem;
-    column-gap: 2rem;
+    -webkit-column-gap: 2rem;
+       -moz-column-gap: 2rem;
+            column-gap: 2rem;
 
 }
 
 .__MoreInfo-Container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 2rem;
 
 }
@@ -171,14 +266,21 @@
 /*******************************************************************************************/
 .Text_Container_bottmFooter{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 1rem;
 }
 .BottomFotter__tiltle-text{
     width: 100%;
     position: relative;
-    order: -1;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
 }
 .BottomFotter__tiltle-text *{
     display: inline;
@@ -195,18 +297,31 @@
     line-height: 1.75;
 }
 .BottomFooter__WaysToDownloadApp-Container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 1rem;
     width: 100%;
 }
 .Download__App-Conitainer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 100%;
-    justify-content: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     gap: 1rem;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .Download__App{
 
@@ -214,9 +329,16 @@
 
 /*******************************************************************************************/
 .__MoreAccLinks-items{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     gap: 1rem;
     
 }

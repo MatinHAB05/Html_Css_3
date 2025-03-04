@@ -1,19 +1,44 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@-webkit-keyframes Loading_Anim {to{background-position: 80% 100%}}
 @keyframes Loading_Anim {to{background-position: 80% 100%}}
-@keyframes Rotate_360deg {
+@-webkit-keyframes Rotate_360deg {
     0%{
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
     /* 50%{
         transform: rotate(180deg);
     } */
     100%{
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@keyframes Rotate_360deg {
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    /* 50%{
+        transform: rotate(180deg);
+    } */
+    100%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
 }
 
 
 
 .__nav-buttons{
+    -webkit-transition: background-color var(--tranns_BUTTON);
+    -o-transition: background-color var(--tranns_BUTTON);
     transition: background-color var(--tranns_BUTTON);
 }
 .__nav-buttons:hover{
@@ -22,18 +47,25 @@
 }
 
 .navigation-left-views__text{
+    -webkit-transition: padding 10ms ease-in-out 10ms ;
+    -o-transition: padding 10ms ease-in-out 10ms ;
     transition: padding 10ms ease-in-out 10ms ;
 }
 .navigation-left-views__text:hover{
     color: greenyellow;
     padding: 0 0 2px 0;
+    background: -o-repeating-linear-gradient(left,currentColor 0 8%,#0000 0 10%) 200% 100%/200% 3px no-repeat;
     background: repeating-linear-gradient(90deg,currentColor 0 8%,#0000 0 10%) 200% 100%/200% 3px no-repeat;
-    animation: Loading_Anim 2s steps(6) infinite;
+    -webkit-animation: Loading_Anim 2s steps(6) infinite;
+            animation: Loading_Anim 2s steps(6) infinite;
 }
 .navigation-left-views__Webicon:hover{
-    animation: Rotate_360deg 800ms ease-in-out 10ms 1 normal forwards;
+    -webkit-animation: Rotate_360deg 800ms ease-in-out 10ms 1 normal forwards;
+            animation: Rotate_360deg 800ms ease-in-out 10ms 1 normal forwards;
 }
 .__title--item-Discover-button{
+    -webkit-transition: background-color var(--tranns_BUTTON);
+    -o-transition: background-color var(--tranns_BUTTON);
     transition: background-color var(--tranns_BUTTON);
 }
 .__title--item-Discover-button:hover{
@@ -41,26 +73,40 @@
     color: var(--Orange_theme_color);
 }
 .Header-Bottom-Container__item-Continer{
+    -webkit-transition:  -webkit-box-shadow var(--tranns_BUTTON);
+    transition:  -webkit-box-shadow var(--tranns_BUTTON);
+    -o-transition:  box-shadow var(--tranns_BUTTON);
     transition:  box-shadow var(--tranns_BUTTON);
+    transition:  box-shadow var(--tranns_BUTTON), -webkit-box-shadow var(--tranns_BUTTON);
 }
 .Header-Bottom-Container__item-Continer:hover{
-    box-shadow: 0px 1px 20px black;
+    -webkit-box-shadow: 0px 1px 20px black;
+            box-shadow: 0px 1px 20px black;
 }
 .SideBar__CloseButton{
+    -webkit-transition: all 100ms linear 100ms;
+    -o-transition: all 100ms linear 100ms;
     transition: all 100ms linear 100ms;
 }
 
 .SideBar__CloseButton:hover{
     opacity: 1;
-    filter: none;
-    box-shadow: none;
+    -webkit-filter: none;
+            filter: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 .SideBar__CloseButton:hover~.__nav-sideBar-Container__LINKS{
-    filter: blur(2px);
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
 }
 .__nav-sideBar-Container__LINKS{
+    -webkit-transition: -webkit-filter 300ms linear 100ms;
+    transition: -webkit-filter 300ms linear 100ms;
+    -o-transition: filter 300ms linear 100ms;
     transition: filter 300ms linear 100ms;
+    transition: filter 300ms linear 100ms, -webkit-filter 300ms linear 100ms;
 
 }
 .SidePanel__navigation-left-views__text:hover::before{
@@ -69,7 +115,17 @@
     position: relative;
     font-weight: bold;
     text-shadow: 0px 0px 10px greenyellow , 1px 1px 4px black ;
-    animation: Light_Blinking 600ms 500ms infinite alternate linear;
+    -webkit-animation: Light_Blinking 600ms 500ms infinite alternate linear;
+            animation: Light_Blinking 600ms 500ms infinite alternate linear;
+}
+
+@-webkit-keyframes Light_Blinking {
+    0%{
+
+    }
+    100%{
+        color: greenyellow;
+    }   
 }
 
 @keyframes Light_Blinking {
@@ -79,6 +135,17 @@
     100%{
         color: greenyellow;
     }   
+}
+
+@-webkit-keyframes OpenMenuANIM {
+    0%{
+        translate: calc(-1*(100vw)) 0 0;
+    }
+    100%{
+        translate: 0 0 0;
+        opacity: 1;
+
+    }
 }
 
 @keyframes OpenMenuANIM {
@@ -92,6 +159,15 @@
     }
 }
 
+@-webkit-keyframes CloseMenuANIM {
+    0%{
+        translate: 0 0 0;
+    }
+    100%{
+        translate: calc(-1*(100vw)) 0 0;
+    }
+}
+
 @keyframes CloseMenuANIM {
     0%{
         translate: 0 0 0;
@@ -102,18 +178,32 @@
 }
 
 .OpenMenuANIM_class{
-    animation: OpenMenuANIM 500ms ease 10ms 1 normal forwards;
+    -webkit-animation: OpenMenuANIM 500ms ease 10ms 1 normal forwards;
+            animation: OpenMenuANIM 500ms ease 10ms 1 normal forwards;
 }
 .CloseMenuANIM_class{
-    animation: CloseMenuANIM 500ms ease-in-out 10ms 1 normal forwards;
+    -webkit-animation: CloseMenuANIM 500ms ease-in-out 10ms 1 normal forwards;
+            animation: CloseMenuANIM 500ms ease-in-out 10ms 1 normal forwards;
 }
 ._DisableBody_MenuActivated{
-    filter: blur(8.6px);
+    -webkit-filter: blur(8.6px);
+            filter: blur(8.6px);
     pointer-events: none;  
 }
 ._DIS-DisableBody_MenuActivated{
-    filter: initial;
+    -webkit-filter: initial;
+            filter: initial;
     pointer-events: initial;  
+}
+
+
+@-webkit-keyframes CloseANIM_ICON_LINE4 {
+    0%{
+        translate: 0 0 0;
+    }
+    100%{
+        translate: 0 -5px 0;
+    }
 }
 
 
@@ -123,6 +213,16 @@
     }
     100%{
         translate: 0 -5px 0;
+    }
+}
+
+@-webkit-keyframes CloseANIM_ICON_LINE2 {
+    0%{
+        translate: 0 0 0;
+    }
+    100%{
+        translate: 0 5px 0;
+        opacity: 0;
     }
 }
 
@@ -136,9 +236,29 @@
     }
 }
 
+@-webkit-keyframes OpenANIM_ICON_LINE4 {
+    0%{
+        translate: 0 -5px 0;
+    }
+    100%{
+        translate: 0 0 0;
+        opacity: 1;
+    }
+}
+
 @keyframes OpenANIM_ICON_LINE4 {
     0%{
         translate: 0 -5px 0;
+    }
+    100%{
+        translate: 0 0 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes OpenANIM_ICON_LINE2 {
+    0%{
+        translate: 0 5px 0;
     }
     100%{
         translate: 0 0 0;
@@ -157,18 +277,22 @@
 }
 
 ._4_colapsLines__MENU-ICON-GROUP{
-    animation: CloseANIM_ICON_LINE4 500ms ease 0ms 1 normal forwards;
+    -webkit-animation: CloseANIM_ICON_LINE4 500ms ease 0ms 1 normal forwards;
+            animation: CloseANIM_ICON_LINE4 500ms ease 0ms 1 normal forwards;
 
 }
 ._2_colapsLines__MENU-ICON-GROUP{
-    animation: CloseANIM_ICON_LINE2 500ms ease 0ms 1 normal forwards;
+    -webkit-animation: CloseANIM_ICON_LINE2 500ms ease 0ms 1 normal forwards;
+            animation: CloseANIM_ICON_LINE2 500ms ease 0ms 1 normal forwards;
 
 }
 ._4_RisesLines__MENU-ICON-GROUP{
-    animation: OpenANIM_ICON_LINE4 500ms ease 100ms 1 normal forwards;
+    -webkit-animation: OpenANIM_ICON_LINE4 500ms ease 100ms 1 normal forwards;
+            animation: OpenANIM_ICON_LINE4 500ms ease 100ms 1 normal forwards;
 
 }
 ._2_RisesLines__MENU-ICON-GROUP{
-    animation: OpenANIM_ICON_LINE2 500ms ease 100ms 1 normal forwards;
+    -webkit-animation: OpenANIM_ICON_LINE2 500ms ease 100ms 1 normal forwards;
+            animation: OpenANIM_ICON_LINE2 500ms ease 100ms 1 normal forwards;
 
 }
