@@ -21,22 +21,22 @@ date: 2025-02-25
 This project is second practice project for reviewing and practicing the markup languages HTML and CSS. In this project, I tried to implement a home page, This project has a more complex and challenging design compared to my second practice project.
 
 ## Todo List
-- [x] Header
-  - [x] Design Guide Structure & HTML
-  - [x] CSS Styles (Colors, Shadows, Transitions, ...)
-  - [x] Hamburger Menu
-    - [x] Design Guide Structure & HTML
-    - [x] CSS Styles (Colors, Shadows, Transitions, ...)
-    - [x] New Animations
-- [x] Body
-  - [x] Design Guide Structure & HTML
-  - [x] CSS Styles (Colors, Shadows, Transitions, ...)
-  - [x] New Animations
-- [x] Footer
-  - [x] Design Guide Structure & HTML
-  - [x] CSS Styles (Colors, Shadows, Transitions, ...)
-  - [x] New Animations
-- [x] Responsive Design
+- :white_check_mark: Header
+  - :white_check_mark: Design Guide Structure & HTML
+  - :white_check_mark: CSS Styles (Colors, Shadows, Transitions, ...)
+  - :white_check_mark: Hamburger Menu
+    - :white_check_mark: Design Guide Structure & HTML
+    - :white_check_mark: CSS Styles (Colors, Shadows, Transitions, ...)
+    - :white_check_mark: New Animations
+- :white_check_mark: Body
+  - :white_check_mark: Design Guide Structure & HTML
+  - :white_check_mark: CSS Styles (Colors, Shadows, Transitions, ...)
+  - :white_check_mark: New Animations
+- :white_check_mark: Footer
+  - :white_check_mark: Design Guide Structure & HTML
+  - :white_check_mark: CSS Styles (Colors, Shadows, Transitions, ...)
+  - :white_check_mark: New Animations
+- :white_check_mark: Responsive Design
 
 
 
