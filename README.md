@@ -16,7 +16,7 @@ date: 2025-02-25
 - [Project Preview](#project-preview)
 
 ## Introduction
-This project is second practice project for reviewing and practicing the markup languages HTML and CSS. In this project, I tried to implement a home page, This project has a more complex and challenging design compared to my second practice project.
+This project is third practice project for reviewing and practicing the markup languages HTML and CSS. In this project, I tried to implement a home page, This project has a more complex and challenging design compared to my second practice project.
 
 ## Todo List
 - :white_check_mark: Header
