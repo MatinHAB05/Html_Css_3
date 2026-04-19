@@ -1,3 +1,5 @@
+
+
 ---
 title: Third HTML-CSS Project
 author: Matin HAB
@@ -13,7 +15,7 @@ date: 2025-02-25
 - [Goals](#goals)
 - [Features](#features)
 - [How to View](#how-to-view)
-- [Project Demo Images](#project-demo-images)
+- [Project Preview](#project-preview)
 
 ## Introduction
 This project is second practice project for reviewing and practicing the markup languages HTML and CSS. In this project, I tried to implement a home page, This project has a more complex and challenging design compared to my second practice project.
@@ -36,6 +38,8 @@ This project is second practice project for reviewing and practicing the markup 
   - [x] New Animations
 - [x] Responsive Design
 
+
+
 ## Goals
 The goal of this practice was to write HTML and CSS code and practice how can I be better prepared and gain more experience for heavier and more complex projects.
 
@@ -49,5 +53,6 @@ The goal of this practice was to write HTML and CSS code and practice how can I 
 ## How to View
 [Check it here](https://www.google.com)
 
-## Project Demo Images
-Some project screenshots will be placed here.
+## Project Preview
+![Preview-1](https://www.google.com)
+![Preview-2](https://www.google.com)
