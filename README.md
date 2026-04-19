@@ -1,5 +1,3 @@
-
-
 ---
 title: Third HTML-CSS Project
 author: Matin HAB
