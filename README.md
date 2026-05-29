@@ -47,11 +47,11 @@ The goal of this practice was to write HTML and CSS code and practice how can I 
 - Flex Box
 - Animation
 - Responsive Design
-- Java Script
+- JavaScript
 
 ## How to View
-[Check it here](https://www.google.com)
+[Check it here](https://matinhab05.github.io/Html_Css_3/
 
 ## Project Preview
-![Preview-1](https://www.google.com)
-![Preview-2](https://www.google.com)
+![Preview-1](https://github.com/user-attachments/assets/c30decef-d62c-4fea-b202-f62d794d3043)
+![Preview-2](https://github.com/user-attachments/assets/d32ed3e7-37f0-4048-9b02-d088d20e96b8)
