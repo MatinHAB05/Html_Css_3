@@ -50,7 +50,7 @@ The goal of this practice was to write HTML and CSS code and practice how can I 
 - JavaScript
 
 ## How to View
-[Check it here](https://matinhab05.github.io/Html_Css_3/
+[Check it here](https://matinhab05.github.io/Html_Css_3/)
 
 ## Project Preview
 ![Preview-1](https://github.com/user-attachments/assets/c30decef-d62c-4fea-b202-f62d794d3043)
